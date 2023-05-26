@@ -19,12 +19,12 @@
     <script>
         function changeImage() {
             var image = document.getElementById("logo-image");
-            image.src = "/src/img/laura.png";
+            image.src = "/img/laura.png";
         }
 
         function revertImage() {
             var image = document.getElementById("logo-image");
-            image.src = "/src/img/lof_aa.png";
+            image.src = "/img/lof_aa.png";
         }
     </script>
 </head>
@@ -42,7 +42,7 @@
         <div class="text-5xl  m-auto font-bold text-center space-y-6">
             <div class="p-2 bg-mauaLightBrown rounded-full border-4 border-black">
                 <a href="#pag3">
-                    <img id="logo-image" src="/src/img/lof_aa.png" alt="logo"
+                    <img id="logo-image" src="/img/lof_aa.png" alt="logo"
                         class="border-4 border-black bg-mauaLightBrown shadow-lg rounded-full w-200 sm:w-400 image-hover"
                         onmouseover="changeImage()" onmouseout="revertImage()">
                 </a>
@@ -52,57 +52,294 @@
     </div>
 
 
-    <div class="h-screen flex flex-col sm:flex-row overflow-y-scroll bg-mauaButtonDefault sm:overflow-auto sm:rounded-none rounded-xl p-2 "
-        id="pag2">
+    <div class="border-y-4 border-black h-screen flex flex-col sm:flex-row overflow-y-scroll bg-mauaButtonDefault sm:overflow-x-scroll sm:overflow-y-auto sm:rounded-none rounded-xl p-2"
+        id="pag2" onmouseover="startScrolling()" onmouseout="stopScrolling()">
+        <div class="flex flex-col sm:flex-row sm:space-x-10 m-auto">
 
-        <div class="m-auto  sm:w-96 sm:h-100 flex flex-col bg-mauaLightBrown p-2  rounded-xl border-4 border-black">
-            <a href="https://www.instagram.com/p/CB_x85FHWpl/" target="_blank">
-                <img src="/src/img/chazin.png" alt="" class="m-auto w-200 sm:w-400 rounded-xl border-4 border-black">
-            </a>
-            <label class="text-center my-2 font-bold text-xl">CHAZIN</label>
-            <p class="justify-center text-center font-semibold px-6 pb-1">
-                Chazin foi uma ilustração digital feita por hobby com um tema dado por uma amiga
-            </p>
-        </div>
+            <div class=" sm:w-96 sm:h-100 bg-mauaLightBrown text-center p-2 rounded-xl border-4 border-black">
+                <a href="https://www.instagram.com/p/CB_x85FHWpl/" target="_blank">
+                    <img src="/img/chazin.png" alt=""
+                        class="m-auto w-200 sm:w-400 rounded-xl border-4 border-black">
+                </a>
+                <label class="text-center my-2 font-bold text-xl">CHAZIN</label>
+                <p class="justify-center text-center font-semibold px-6 pb-1">
+                    Chazin foi uma ilustração digital feita por hobby com um tema dado por uma amiga
+                </p>
+                <p class="pt-2"> - 2022 - </p>
 
-        <div class="m-auto sm:w-96 sm:h-100 flex flex-col bg-mauaLightBrown p-2  rounded-xl border-4 border-black">
-            <a href="https://www.instagram.com/p/Cfmu0wipofN/" target="_blank">
-                <img src="/src/img/cadin.jpeg" alt="" class="m-auto w-200 sm:w-400 rounded-xl border-4 border-black">
-            </a>
-            <label class="text-center my-2 font-bold text-xl">CADIM</label>
-            <p class="justify-center text-center font-semibold px-6 pb-1">
-                Cadim é um projeto da faculdade que saiu do papel e entrou nas grandes telonas
-            </p>
-
-        </div>
+            </div>
 
 
-        <div class="m-auto sm:w-96 sm:h-100 bg-mauaLightBrown text-center p-2 rounded-xl border-4 border-black">
-            <a href="https://www.instagram.com/p/CUIvRxZLMN-/" target="_blank">
-                <img src="/src/img/bruxa_sla.jpg" alt="" class="m-auto w-200 sm:w-400 rounded-xl border-4 border-black">
-            </a>
-            <label class="text-center m-y-2 font-bold text-xl">DRAW IN YOUR STYLE</label>
-            <p class="justify-center text-center font-semibold px-6 pb-1">
-                Desenho feito na participação de #DrawInYour style um desenho do artista
-            </p>
+            <div class=" sm:w-96 sm:h-100 bg-mauaLightBrown text-center p-2 rounded-xl border-4 border-black">
+                <a href="https://www.instagram.com/p/Cfmu0wipofN/" target="_blank">
+                    <img src="/img/cadin.jpeg" alt=""
+                        class="m-auto w-200 sm:w-400 rounded-xl border-4 border-black">
+                </a>
+                <label class="text-center my-2 font-bold text-xl">CADIM</label>
+                <p class="justify-center text-center font-semibold px-6 pb-1">
+                    Cadim é um projeto da faculdade que saiu do papel e entrou nas grandes telonas
+                </p>
+                <p class="pt-2"> - 2022 - </p>
+
+            </div>
+
+
+            <div class=" sm:w-96 sm:h-100 bg-mauaLightBrown text-center p-2 rounded-xl border-4 border-black">
+                <a href="https://www.instagram.com/p/CUIvRxZLMN-/" target="_blank">
+                    <img src="/img/bruxa_sla.jpg" alt=""
+                        class="m-auto w-200 sm:w-400 rounded-xl border-4 border-black">
+                </a>
+                <label class="text-center m-y-2 font-bold text-xl">DRAW IN YOUR STYLE</label>
+                <p class="justify-center text-center font-semibold px-6 pb-1">
+                    Desenho feito na participação de #DrawInYour style um desenho do artista
+                </p>
+                <p class="pt-2"> - 2022 - </p>
+            </div>
+
+            <div class=" sm:w-96 sm:h-100 bg-mauaLightBrown text-center p-2 rounded-xl border-4 border-black">
+                <a href="https://www.instagram.com/p/CB_x85FHWpl/" target="_blank">
+                    <img src="/img/chazin.png" alt=""
+                        class="m-auto w-200 sm:w-400 rounded-xl border-4 border-black">
+                </a>
+                <label class="text-center my-2 font-bold text-xl">CHAZIN</label>
+                <p class="justify-center text-center font-semibold px-6 pb-1">
+                    Chazin foi uma ilustração digital feita por hobby com um tema dado por uma amiga
+                </p>
+                <p class="pt-2"> - 2022 - </p>
+
+            </div>
+            <div class=" sm:w-96 sm:h-100 bg-mauaLightBrown text-center p-2 rounded-xl border-4 border-black">
+                <a href="https://www.instagram.com/p/CB_x85FHWpl/" target="_blank">
+                    <img src="/img/chazin.png" alt=""
+                        class="m-auto w-200 sm:w-400 rounded-xl border-4 border-black">
+                </a>
+                <label class="text-center my-2 font-bold text-xl">CHAZIN</label>
+                <p class="justify-center text-center font-semibold px-6 pb-1">
+                    Chazin foi uma ilustração digital feita por hobby com um tema dado por uma amiga
+                </p>
+                <p class="pt-2"> - 2022 - </p>
+
+            </div>
+            <div class=" sm:w-96 sm:h-100 bg-mauaLightBrown text-center p-2 rounded-xl border-4 border-black">
+                <a href="https://www.instagram.com/p/CB_x85FHWpl/" target="_blank">
+                    <img src="/img/chazin.png" alt=""
+                        class="m-auto w-200 sm:w-400 rounded-xl border-4 border-black">
+                </a>
+                <label class="text-center my-2 font-bold text-xl">CHAZIN</label>
+                <p class="justify-center text-center font-semibold px-6 pb-1">
+                    Chazin foi uma ilustração digital feita por hobby com um tema dado por uma amiga
+                </p>
+                <p class="pt-2"> - 2022 - </p>
+
+            </div>
+
 
         </div>
     </div>
 
 
-    <div class="h-screen flex flex-col m-auto" id="pag3">
-        <div class="m-auto space-y-10">
-            <h1 class="m-auto text-center text-3xl sm:text-5xl font-bold"> Sobre mim </h1>
-            <p class=" text-center px-4 sm:px-72">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book.
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book.
-            </p>
+    <div class="h-screen flex flex-col" id="pag3">
+        <div class="m-auto ">
+            <div class="m-auto flex-col space-y-10">
+                <h1 class="m-auto text-center text-3xl sm:text-5xl font-bold"> Sobre mim </h1>
+                <p class=" text-center px-4 sm:px-72">
+                    Laura Orefice Folkmann, criada em Santo André, cidade do Estado de São Paulo, iniciou sua trajetória
+                    artística em 2017 ao ingressar no curso de Animação no Centro Audiovisual de São Bernardo do Campo
+                    (CAV), sendo a 1ª colocada. Mediante o curso, juntamente com seu interesse prévio na área artística
+                    e cinematográfica, foi levada a cursar Cinema & Animação da Faculdade de Comunicação e Marketing
+                    (FACOM) na Fundação Armando Alvares Penteado (FAAP) em 2019.
+
+                    <br /><br />
+                    Na faculdade, fez parte do núcleo LABJOR de jornalismo, atuou como monitora nos laboratórios de
+                    animação em 2020, e trabalhou como assistente de animação 2D nos curtas universitários “Pinguinho”
+                    (direção de Sâmya Gheneim Marin, FAAP, 2020), “Miado” (direção de Victória Silvestre, FAAP, 2020) e
+                    “Mise en Place” (direção de Pedro Rigamonti, FAAP, 2022). Em 2020 foi produtora do curta de
+                    4ºsemestre “Cadim” (direção Luiza Pugliesi Villaça, FAAP, 2020).
+
+                    <br /><br />
+                    Em 2021, Laura trabalhou como colorista para o curta “Anantara” de Douglas Ferreira, e como
+                    intervaladora em uma propaganda da Sadia juntamente com Douglas. Em 2022, trabalhou como animadora
+                    2D cut-out na Lunart, em um projeto ainda não divulgado.
+                </p>
+
+            </div>
+            <div class="flex  justify-center space-x-10 mt-10 ">
+
+                <a class="" href="https://www.instagram.com/lof_arte/" target="_blank">
+                    <img src="/img/mdi_instagram.svg" alt="" srcset=""
+                        class="  bg-mauaLightBrown p-2 rounded-xl border-2 border-black shadow-xl">
+                </a>
+                <a class="" href="https://www.linkedin.com/in/laura-orefice-folkmann-794764204/" target="_blank">
+                    <img src="/img/mdi_linkedin.svg" alt="" srcset=""
+                        class=" bg-mauaLightBrown p-2 rounded-xl border-2 border-black shadow-xl">
+                </a>
+
+                <div class="">
+                    <button onclick="toggleLanguage()"
+                        class="font-bold bg-mauaYelllowButton p-2 rounded-xl border-2 border-black shadow-xl">
+                        Translate
+                    </button>
+                </div>
+
+                <a class="" href="https://www.behance.net/laurafolkmann" target="_blank">
+                    <img src="/img/ri_behance-fill.svg" alt="" srcset=""
+                        class="  bg-mauaLightBrown p-2 rounded-xl border-2 border-black shadow-xl">
+                </a>
+                <a class=" " href="mailto:laura.folkmann@gmail.com" target="_blank">
+                    <img src="/img/ic_outline-email.svg" alt="" srcset=""
+                        class="  bg-mauaLightBrown p-2 rounded-xl border-2 border-black shadow-xl">
+
+
+                </a>
+            </div>
+
         </div>
     </div>
+
+
+
+    <script>
+        let scrollingInterval;
+
+        function startScrolling() {
+            scrollingInterval = setInterval(scrollHorizontally, 10); // Adjust the scroll speed here
+        }
+
+        function stopScrolling() {
+            clearInterval(scrollingInterval);
+        }
+
+        function scrollHorizontally() {
+            const container = document.getElementById("pag2");
+            container.scrollLeft += 1; // Adjust the scroll speed here
+        }
+
+
+
+        let language = "portuguese"; // Variável de controle do idioma
+
+        function toggleLanguage() {
+            const content = document.getElementById("pag3");
+
+            if (language === "portuguese") {
+                content.innerHTML = `
+                <div class="m-auto ">
+                    <div class="m-auto flex-col space-y-10">
+                        <h1 class="m-auto text-center text-3xl sm:text-5xl font-bold"> About me </h1>
+                        <p class=" text-center px-4 sm:px-72">
+
+                            Laura Orefice Folkmann, raised in Santo André, a city in the State of São Paulo, began her artistic
+                            career in 2017 when she joined the Animation course at Centro Audiovisual de São Bernardo do Campo
+                            (CAV), entering 1st place. Through the course, along with her previous interest in the artistic and
+                            cinematographic area, she was taken to attend Cinema & Animation at the Faculdade de Comunicação e
+                            Marketing (FACOM) at Fundação Armando Alvares Penteado (FAAP) in 2019.
+
+                            <br /><br />
+
+                            In college, she was part of the LABJOR journalism unit, acted as monitors in the animation
+                            laboratories in 2020, and worked as a 2D animation assistant on the university shorts “Pinguinho”
+                            (directed by Sâmya Gheneim Marin, FAAP, 2020), “Miado” (directed by Victória Silvestre, FAAP, 2020)
+                            and “Mise en Place” (directed by Pedro Rigamonti, FAAP, 2022). In 2020, she produced the 4th
+                            semester short “Cadim” (directed by Luiza Pugliesi Villaça, FAAP, 2020).
+
+                            <br /><br />
+
+                            In 2021, Laura worked as a colorist for the short “Anantara” by Douglas Ferreira, and as an
+                            inbetweener in an advertisement for Sadia together with Douglas. In 2022, she worked as a 2D cut-out
+                            animator at Lunart, on an undisclosed project.
+
+
+                        </p>
+                    </div>
+                    <div class="flex  justify-center space-x-10 mt-10 ">
+
+                        <a class="" href="https://www.instagram.com/lof_arte/" target="_blank">
+                            <img src="/img/mdi_instagram.svg" alt="" srcset=""
+                                class="  bg-mauaLightBrown p-2 rounded-xl border-2 border-black shadow-xl">
+                        </a>
+                        <a class="" href="https://www.linkedin.com/in/laura-orefice-folkmann-794764204/" target="_blank">
+                            <img src="/img/mdi_linkedin.svg" alt="" srcset=""
+                                class=" bg-mauaLightBrown p-2 rounded-xl border-2 border-black shadow-xl">
+                        </a>
+                        <div class="">
+                    <button onclick="toggleLanguage()"
+                        class="font-bold bg-mauaYelllowButton p-2 rounded-xl border-2 border-black shadow-xl">
+                        Traduzir
+                    </button>
+                </div>
+                        <a class="" href="https://www.behance.net/laurafolkmann" target="_blank">
+                            <img src="/img/ri_behance-fill.svg" alt="" srcset=""
+                                class="  bg-mauaLightBrown p-2 rounded-xl border-2 border-black shadow-xl">
+                        </a>
+                        <a class=" " href="mailto:laura.folkmann@gmail.com" target="_blank">
+                            <img src="/img/ic_outline-email.svg" alt="" srcset=""
+                                class="  bg-mauaLightBrown p-2 rounded-xl border-2 border-black shadow-xl">
+
+
+                        </a>
+                    </div>
+                </div>
+                `;
+                language = "english";
+            } else {
+                content.innerHTML = `
+                    <div class="m-auto ">
+                        <div class="m-auto flex-col space-y-10">
+                <h1 class="m-auto text-center text-3xl sm:text-5xl font-bold"> Sobre mim </h1>
+                <p class=" text-center px-4 sm:px-72">
+                    Laura Orefice Folkmann, criada em Santo André, cidade do Estado de São Paulo, iniciou sua trajetória
+                    artística em 2017 ao ingressar no curso de Animação no Centro Audiovisual de São Bernardo do Campo
+                    (CAV), sendo a 1ª colocada. Mediante o curso, juntamente com seu interesse prévio na área artística
+                    e cinematográfica, foi levada a cursar Cinema & Animação da Faculdade de Comunicação e Marketing
+                    (FACOM) na Fundação Armando Alvares Penteado (FAAP) em 2019.
+
+                    <br /><br />
+                    Na faculdade, fez parte do núcleo LABJOR de jornalismo, atuou como monitora nos laboratórios de
+                    animação em 2020, e trabalhou como assistente de animação 2D nos curtas universitários “Pinguinho”
+                    (direção de Sâmya Gheneim Marin, FAAP, 2020), “Miado” (direção de Victória Silvestre, FAAP, 2020) e
+                    “Mise en Place” (direção de Pedro Rigamonti, FAAP, 2022). Em 2020 foi produtora do curta de
+                    4ºsemestre “Cadim” (direção Luiza Pugliesi Villaça, FAAP, 2020).
+
+                    <br /><br />
+                    Em 2021, Laura trabalhou como colorista para o curta “Anantara” de Douglas Ferreira, e como
+                    intervaladora em uma propaganda da Sadia juntamente com Douglas. Em 2022, trabalhou como animadora
+                    2D cut-out na Lunart, em um projeto ainda não divulgado.
+                </p>
+
+            </div>
+            <div class="flex  justify-center space-x-10 mt-10 ">
+
+                <a class="" href="https://www.instagram.com/lof_arte/" target="_blank">
+                    <img src="/img/mdi_instagram.svg" alt="" srcset=""
+                        class="  bg-mauaLightBrown p-2 rounded-xl border-2 border-black shadow-xl">
+                </a>
+                <a class="" href="https://www.linkedin.com/in/laura-orefice-folkmann-794764204/" target="_blank">
+                    <img src="/img/mdi_linkedin.svg" alt="" srcset=""
+                        class=" bg-mauaLightBrown p-2 rounded-xl border-2 border-black shadow-xl">
+                </a>
+                <div class="">
+                    <button onclick="toggleLanguage()"
+                        class="font-bold bg-mauaYelllowButton p-2 rounded-xl border-2 border-black shadow-xl">
+                        Translate
+                    </button>
+                </div>
+                <a class="" href="https://www.behance.net/laurafolkmann" target="_blank">
+                    <img src="/img/ri_behance-fill.svg" alt="" srcset=""
+                        class="  bg-mauaLightBrown p-2 rounded-xl border-2 border-black shadow-xl">
+                </a>
+                <a class=" " href="mailto:laura.folkmann@gmail.com" target="_blank">
+                    <img src="/img/ic_outline-email.svg" alt="" srcset=""
+                        class="  bg-mauaLightBrown p-2 rounded-xl border-2 border-black shadow-xl">
+
+
+                </a>
+            </div>
+                    </div>
+                `;
+                language = "portuguese";
+            }
+        }
+    </script>
 </body>
 
 </html>
